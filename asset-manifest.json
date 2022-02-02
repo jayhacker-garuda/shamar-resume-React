@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/shamar-resume-React/static/css/main.073c9b0a.css",
-    "main.js": "/shamar-resume-React/static/js/main.44a3296d.js",
+    "main.css": "/shamar-resume-React/static/css/main.1d7603e6.css",
+    "main.js": "/shamar-resume-React/static/js/main.b2c94bb7.js",
     "static/js/787.3c54bddd.chunk.js": "/shamar-resume-React/static/js/787.3c54bddd.chunk.js",
-    "static/media/logo.svg": "/shamar-resume-React/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/shamar-resume-React/index.html",
-    "main.073c9b0a.css.map": "/shamar-resume-React/static/css/main.073c9b0a.css.map",
-    "main.44a3296d.js.map": "/shamar-resume-React/static/js/main.44a3296d.js.map",
+    "main.1d7603e6.css.map": "/shamar-resume-React/static/css/main.1d7603e6.css.map",
+    "main.b2c94bb7.js.map": "/shamar-resume-React/static/js/main.b2c94bb7.js.map",
     "787.3c54bddd.chunk.js.map": "/shamar-resume-React/static/js/787.3c54bddd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.44a3296d.js"
+    "static/css/main.1d7603e6.css",
+    "static/js/main.b2c94bb7.js"
   ]
 }
