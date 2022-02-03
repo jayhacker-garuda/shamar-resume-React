@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shamar-resume-React/static/css/main.f9114199.css",
-    "main.js": "/shamar-resume-React/static/js/main.38d39d69.js",
+    "main.css": "/shamar-resume-React/static/css/main.653b1b59.css",
+    "main.js": "/shamar-resume-React/static/js/main.df2ebc92.js",
     "static/js/787.3c54bddd.chunk.js": "/shamar-resume-React/static/js/787.3c54bddd.chunk.js",
     "static/media/profilephoto.jpg": "/shamar-resume-React/static/media/profilephoto.0897be0fd3411d605ab4.jpg",
     "static/media/Poppins-Thin.ttf": "/shamar-resume-React/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
@@ -12,12 +12,12 @@
     "static/media/Poppins-Bold.ttf": "/shamar-resume-React/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
     "static/media/Poppins-ExtraBold.ttf": "/shamar-resume-React/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
     "index.html": "/shamar-resume-React/index.html",
-    "main.f9114199.css.map": "/shamar-resume-React/static/css/main.f9114199.css.map",
-    "main.38d39d69.js.map": "/shamar-resume-React/static/js/main.38d39d69.js.map",
+    "main.653b1b59.css.map": "/shamar-resume-React/static/css/main.653b1b59.css.map",
+    "main.df2ebc92.js.map": "/shamar-resume-React/static/js/main.df2ebc92.js.map",
     "787.3c54bddd.chunk.js.map": "/shamar-resume-React/static/js/787.3c54bddd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9114199.css",
-    "static/js/main.38d39d69.js"
+    "static/css/main.653b1b59.css",
+    "static/js/main.df2ebc92.js"
   ]
 }
