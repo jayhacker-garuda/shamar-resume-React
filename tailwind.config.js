@@ -25,6 +25,7 @@ module.exports = {
             alignItems: 'center',
             textAlign: 'center',
             justifyContent: 'center',
+            height: '10%',
             minHeight: 'fit-content',
           },
           '.profile-parent': {
@@ -232,15 +233,153 @@ module.exports = {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
-            height: '10vh !important',
             minHeight: '670px',
             backgroundImage: 'linear-gradient(to right, #0c2a7b, #132f7a, #193379, #1f3778, #253b76, #2d4d82, #3a5e8d, #4a7097, #6d94ae, #98b8c6, #c9dce0, #fdffff)'
+          }
+        }
+
+        const headers = {
+          '.header-container': {
+            display: 'flex',
+            justifyContent: 'center',
+            height: '140px',
+            color: 'var(--white)',
+          },
+          '.header-parent': {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            height: '100%',
+            width: '70%',
+            color: 'var(--white)',
+          },
+          '.header-logo': {
+            fontSize: '50px',
+            fontFamily: 'Poppins ExtraBold',
+            color: 'var(--white)'
+          },
+          '.header-options': {
+            display: 'flex',
+            alignItems: 'center',
+          },
+          '.header-option': {
+            fontSize: '16px',
+            cursor: 'pointer',
+            fontWeight: '600',
+          },
+          '.header-hamburger': {
+            display: 'none',
+            color: 'var(--white)'
+          },
+          '.header-option-seperator': {
+            margin: '0 50px 0 0',
+            color: 'var(--white)',
+          },
+          '.selected-header-option': {
+            color: 'var(--orange)'
+          },
+
+          '@media only screen and (max-width: 1110px)': {
+            '.header-parent': {
+              width: '80%',
+            }
+          },
+          '@media only screen and (max-width: 970px)': {
+            '.header-hamburger': {
+              display: 'block',
+            },
+            '.header-parent': {
+              width: '100%',
+              padding: '0 40px',
+              position: 'relative'
+            },
+            '.header-options': {
+              display: 'flex',
+              flexDirection: 'column',
+              position: 'absolute',
+              left: '-100%',
+              top: '0px',
+              height: '100vh',
+              width: '100%',
+              justifyContent: 'space-around',
+              backgroundColor: '#1f2235',
+              zIndex: '1000',
+              opacity: '0.8',
+              transition: 'all 0.8s ease-out',
+            },
+            '.header-option-seperator': {
+              margin: '0',
+            },
+            '.selected-header-option': {
+              color: 'var(--white)',
+            },
+            '.header-option': {
+              color: 'var(--white)',
+            },
+            '.header-hamburger-bars': {
+              fontSize: '30px',
+              cursor: 'pointer',
+              margin: ' 0px 10px',
+              color: 'var(--white)',
+            },
+            '.show-hamburger-options': {
+              left: '0',
+              opacity: '1',
+            }
+          }
+
+
+        }
+        const heading = {
+          '.heading-container': {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            width: '100%',
+            margin: '0 0 50px 0',
+          },
+          '.screen-sub-heading': {
+            letterSpacing: '3px',
+            margin: '8px 0 18px 0',
+            fontSize: '12px',
+            color: 'var(--black)'
+          },
+          '.screen-heading': {
+            fontSize: '32px',
+            color: '#1f2235',
+            fontFamily: 'Poppins Bold',
+          },
+          '.heading-seperator': {
+            display: 'flex',
+            alignItems: 'center',
+            position: 'relative',
+            width: '180px',
+            margin: '10px 0 0 0',
+          },
+          '.seperator-line': {
+            width: '100%',
+            height: '2px',
+            backgroundColor: '#1f2235'
+          },
+          '.seperator-blob': {
+            height: '10px',
+            width: '100%',
+            position: 'absolute',
+            display: 'flex',
+            justifyContent: 'center',
+          },
+          '.sperator-blob div': {
+            width: '35px',
+            borderRadius: '10px',
+            backgroundColor: 'var(--dark-orange)'
           }
         }
         addComponents(buttons)
         addComponents(profiles)
         addComponents(footers)
         addComponents(homes)
+        addComponents(headers)
+        addComponents(heading)
       }
     ),
   ],
