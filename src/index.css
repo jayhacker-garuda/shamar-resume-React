@@ -2,3 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Poppins Medium";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Poppins Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./assets/fonts/Poppins-SemiBold.ttf");
+
+}
+
+@font-face {
+    font-family: "Poppins Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./assets/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins ExtraBold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins Light";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./assets/fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+    font-family: "Poppins Thin";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./assets/fonts/Poppins-Thin.ttf");
+}
+
+::-webkit-scrollbar {
+    width: 6px !important;
+    height: 6px !important;
+}
+
+body ::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 100%, 0.16);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+    background: hsla(0, 0%, 100%, 0.1);
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}

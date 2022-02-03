@@ -21,10 +21,10 @@ function Profile() {
                     <div className="profile-details-name">
                         <span>
                             {" "}
-                            Hello, I'm <span className="highlighted-text">Sham Don</span>
+                            Hello, I'm <span className="highlighted-text">SHAM DON</span>
                         </span>
                     </div>
-                    <div className="profile-details-rols">
+                    <div className="profile-details-role">
                         <span className="primary-text">
                             {" "}
                             <h1>
@@ -51,11 +51,11 @@ function Profile() {
                         </span>
                     </div>
                     <div className='profile-options'>
-                        <button className='rounded-2xl px-4 w-40 cursor-pointer transition sm:font-medium active:translate-y-1 bg-indigo-500 border-2 text-white hover:text-blue hover:rounded-3xl'>
+                        <button className='btn primary-btn'>
                             {""}
                             Wave{" "}
                         </button>
-                        <button className='btn highlighted-btn md:z-50'>
+                        <button className='btn highlighted-btn'>
                             {""}
                             Connect Your Eth Wallet{" "}
                         </button>
