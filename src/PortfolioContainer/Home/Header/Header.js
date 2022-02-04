@@ -19,26 +19,34 @@ function Header() {
 
     let currentScreenSubscription = ScrollService.currentScreenBroadCaster.subscribe(updateCurrentScreen)
 
+
     const getHeaderOptions = () => {
         return (
             TOTAL_SCREENS.map((screen, d) => (
                 <div key={screen.screen_name} className={getHeaderOptionsClass(d)}
                     onClick={() => switchScreen(d, screen)}>
                     <span>{screen.screen_name}</span>
+                    {/* <span>{getHeaderOptionsClass(1)}</span> */}
+                    {/* {console.log(screen.screen_name, "index =", d)} */}
                 </div>
             ))
-        )
+        );
     }
 
     const getHeaderOptionsClass = (index) => {
         let classes = "header-option";
+
         if (index < TOTAL_SCREENS.length - 1)
-            classes += "header-option-seperator";
+            classes += " header-option-seperator";
 
         if (selectedScreen === index)
-            classes += "selected-header-option";
-        return
+            classes += " selected-header-option";
+
+        // console.log("Applied Classes", classes, "to", index, "selected Screen =", selectedScreen)
+        return classes;
     }
+
+
 
     const switchScreen = (index, screen) => {
         let screenComponent = document.getElementById(screen.screen_name)
@@ -50,19 +58,19 @@ function Header() {
     };
 
 
+
     return (
-        <div>
-            <div className='header-container' onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
-                <div className='header-parent'>
-                    <div className='header-hamburger' onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
-                        <FontAwesomeIcon className='header-hamburger-bars' icon={faBars} />
-                    </div>
-                    <div className='header-logo'>
-                        <span>SHAMDON^</span>
-                    </div>
-                    <div className={(showHeaderOptions) ? "header-options show-hamburger-options" : "header-option"}>
-                        {getHeaderOptions()}
-                    </div>
+        <div className='header-container' onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
+            <div className='header-parent'>
+                <div className='header-hamburger' onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
+                    <FontAwesomeIcon className='header-hamburger-bars' icon={faBars} />
+                </div>
+                <div className='header-logo'>
+                    <span>SHAMDON^</span>
+                </div>
+                {console.log(showHeaderOptions)}
+                <div className={(showHeaderOptions) ? "header-options show-hamburger-options" : "header-options"}>
+                    {getHeaderOptions()}
                 </div>
             </div>
         </div>

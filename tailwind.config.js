@@ -40,17 +40,17 @@ module.exports = {
           '.profile-details-role': {
             display: 'flex',
             flexDirection: 'column',
-            margin: '14px 0px 24px 0px'
+            margin: '14px 0px 24px 0px',
           },
           '.profile-details-role h1': {
             fontSize: '40px',
             fontFamily: "cursive",
           },
           '.primary-text': {
-            color: '(--white)',
+            color: '#ffffff',
           },
           '.highlighted-text': {
-            color: 'var(--dark-orange)',
+            color: '#ff5823',
           },
           '.profile-role-tagline': {
             fontSize: '19px',
@@ -62,18 +62,18 @@ module.exports = {
             '&:hover': {
               margin: '0 0 0 28px',
               backgroundColor: 'cornsilk',
-              color: '#111'
+              color: '#111',
             }
           },
           '.profile-picture': {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            boxShadow: '0 1px 0px 0px var(--orange)',
+            boxShadow: '0 1px 0px 0px #ff5823',
             borderRadius: '50%',
             height: '380px',
             width: '380px',
-            margin: '0 0px 0 100px'
+            margin: '0 0px 0 100px',
           },
           '.profile-picture-background': {
             height: '92%',
@@ -89,13 +89,13 @@ module.exports = {
             }
           },
           '.colz .colz-icon': {
-            color: 'white',
+            color: '#ffffff',
             padding: '8px',
             paddingLeft: '0px',
           },
           '.colz .colz-icon i': {
             '&:hover': {
-              transform: 'scale(1.5)'
+              transform: 'scale(1.5)',
             }
           },
           '@media screen and (max-width: 1110px)': {
@@ -103,19 +103,19 @@ module.exports = {
               margin: '0 0px 0 80px',
             },
             '.profile-details-name': {
-              fontSize: '20px'
+              fontSize: '20px',
             },
             '.profile-details-role .primary-text': {
-              fontSize: '12px'
+              fontSize: '12px',
             },
             '.profile-options .btn': {
               width: '120px',
               padding: '11px 0',
-              zIndex: '700'
+              zIndex: '700',
             },
             '.footer-parent': {
               display: 'flex',
-              alignItems: 'flex-end'
+              alignItems: 'flex-end',
             },
           },
           // @media
@@ -123,7 +123,7 @@ module.exports = {
             '.profile-picture': {
               height: '320px',
               width: '320px',
-              margin: '0 0 0 4px'
+              margin: '0 0 0 4px',
             },
           },
           '@media screen and (max-width: 810px)': {
@@ -139,20 +139,20 @@ module.exports = {
               justifyContent: 'space-between'
             },
             '.profile-details': {
-              margin: '25px 0 0'
+              margin: '25px 0 0',
             },
             '.profile-options .highlighted-btn': {
               margin: '0 !important',
             },
             '.profile-options .profile-details-role': {
-              textAlign: 'center'
+              textAlign: 'center',
             },
           },
           '@media screen and (max-width: 375px)': {
             '.profile-picture': {
               height: '257px',
               width: '257px',
-              margingTop: '-90px',
+              marginTop: '-90px',
             },
             '.profile-details': {
               width: '90%',
@@ -170,22 +170,22 @@ module.exports = {
             transition: '0.2s',
             fontFamily: "Poppins SemiBold",
             '&:active': {
-              transform: 'translateY(2px)'
+              transform: 'translateY(2px)',
             },
           },
           '.primary-btn': {
-            color: 'var(--white)',
+            color: '#ffffff',
             border: '2px solid linen',
             fontSize: '12px',
-            backgroundColor: '#1f2235',
+            backgroundColor: '#193379',
             '&:hover': {
               color: 'aliceblue',
               border: '2px solid #ff5823',
-              backgroundColor: '#1f2235'
+              backgroundColor: '#193379',
             }
           },
           '.highlighted-btn': {
-            color: 'var(--white)',
+            color: '#ffffff',
             fontSize: '12px',
             backgroundColor: '#ff5823',
             '@media only screen and (max-width: 568px)': {
@@ -193,12 +193,12 @@ module.exports = {
             }
           },
           '.red-border': {
-            border: '1px solid var(--error-message) !important',
+            border: '1px solid #e44f4fd1 !important',
           },
           '.fade-in': {
             opacity: '0px',
             transform: 'translateY(80px)',
-            transition: 'all 0.8s ease'
+            transition: 'all 0.8s ease',
           }
         }
 
@@ -208,22 +208,22 @@ module.exports = {
             width: '100%',
             overflow: 'hidden',
             display: 'flex',
-            justifyContent: 'center'
+            justifyContent: 'center',
           },
           '.footer-parent': {
             width: '100%',
             height: '100%',
-            maxWidth: '1920px'
+            maxWidth: '1920px',
           },
           '.footer-parent img': {
             maxWidth: '100%',
-            height: '130px',
+            height: '100%',
           },
 
           '@media screen and (max-width: 1110px)': {
             '.footer-parent': {
               display: 'flex',
-              alignItems: 'flex-end'
+              alignItems: 'flex-end',
             },
           },
         }
@@ -234,7 +234,7 @@ module.exports = {
             flexDirection: 'column',
             justifyContent: 'space-between',
             minHeight: '670px',
-            backgroundImage: 'linear-gradient(to right, #0c2a7b, #132f7a, #193379, #1f3778, #253b76, #2d4d82, #3a5e8d, #4a7097, #6d94ae, #98b8c6, #c9dce0, #fdffff)'
+            backgroundImage: 'linear-gradient(to right, #0c2a7b, #132f7a, #193379, #1f3778, #253b76, #2d4d82, #3a5e8d, #4a7097, #6d94ae, #98b8c6, #c9dce0, #fdffff)',
           }
         }
 
@@ -243,7 +243,7 @@ module.exports = {
             display: 'flex',
             justifyContent: 'center',
             height: '140px',
-            color: 'var(--white)',
+            color: '#ffffff',
           },
           '.header-parent': {
             display: 'flex',
@@ -251,12 +251,12 @@ module.exports = {
             justifyContent: 'space-between',
             height: '100%',
             width: '70%',
-            color: 'var(--white)',
+            color: '#ffffff',
           },
           '.header-logo': {
             fontSize: '50px',
             fontFamily: 'Poppins ExtraBold',
-            color: 'var(--white)'
+            color: '#ffffff',
           },
           '.header-options': {
             display: 'flex',
@@ -269,14 +269,14 @@ module.exports = {
           },
           '.header-hamburger': {
             display: 'none',
-            color: 'var(--white)'
+            color: '#ffffff',
           },
           '.header-option-seperator': {
             margin: '0 50px 0 0',
-            color: 'var(--white)',
+            color: '#ffffff',
           },
           '.selected-header-option': {
-            color: 'var(--orange)'
+            color: '#ff5823',
           },
 
           '@media only screen and (max-width: 1110px)': {
@@ -291,7 +291,7 @@ module.exports = {
             '.header-parent': {
               width: '100%',
               padding: '0 40px',
-              position: 'relative'
+              position: 'relative',
             },
             '.header-options': {
               display: 'flex',
@@ -311,16 +311,16 @@ module.exports = {
               margin: '0',
             },
             '.selected-header-option': {
-              color: 'var(--white)',
+              color: '#ffffff',
             },
             '.header-option': {
-              color: 'var(--white)',
+              color: '#ffffff',
             },
             '.header-hamburger-bars': {
               fontSize: '30px',
               cursor: 'pointer',
               margin: ' 0px 10px',
-              color: 'var(--white)',
+              color: '#ffffff',
             },
             '.show-hamburger-options': {
               left: '0',
@@ -330,6 +330,7 @@ module.exports = {
 
 
         }
+
         const heading = {
           '.heading-container': {
             display: 'flex',
@@ -338,17 +339,20 @@ module.exports = {
             width: '100%',
             margin: '0 0 50px 0',
           },
+
           '.screen-sub-heading': {
             letterSpacing: '3px',
             margin: '8px 0 18px 0',
             fontSize: '12px',
-            color: 'var(--black)'
+            color: '#333333',
           },
+
           '.screen-heading': {
             fontSize: '32px',
             color: '#1f2235',
             fontFamily: 'Poppins Bold',
           },
+
           '.heading-seperator': {
             display: 'flex',
             alignItems: 'center',
@@ -356,30 +360,123 @@ module.exports = {
             width: '180px',
             margin: '10px 0 0 0',
           },
+
           '.seperator-line': {
             width: '100%',
             height: '2px',
-            backgroundColor: '#1f2235'
+            backgroundColor: '#1f2235',
           },
+
           '.seperator-blob': {
             height: '10px',
             width: '100%',
             position: 'absolute',
             display: 'flex',
-            justifyContent: 'center',
+            justifyContent: 'space-around',
+            marginTop: '-4px',
           },
-          '.sperator-blob div': {
+
+          '.seperator-blob div': {
             width: '35px',
             borderRadius: '10px',
-            backgroundColor: 'var(--dark-orange)'
+            backgroundColor: '#ff5823',
           }
         }
-        addComponents(buttons)
-        addComponents(profiles)
-        addComponents(footers)
-        addComponents(homes)
-        addComponents(headers)
+
+        const aboutMe = {
+          '.about-me-container': {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            margin: '-5px 0 0 0',
+            backgroundColor: 'white',
+          },
+          '.about-me-parent': {
+            maxWidth: '1000px',
+            width: '70%',
+          },
+          '.about-me-card': {
+            display: 'flex',
+            width: '100%',
+            boxShadow: '0 0px 20px -2px #1f2235',
+          },
+          '.about-me-profile': {
+            width: '50%',
+            backgroundImage: 'url(".//assets/AboutMe/me.jpg")',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+          },
+          '.about-me-details': {
+            width: '480px',
+            textAlign: 'justify',
+            padding: '30px',
+          },
+          '.about-me-description': {
+            fontSize: '12px',
+          },
+          '.about-me-highlights': {
+            margin: '80px 0',
+          },
+          '.highlight-heading': {
+            fontFamily: 'poppins Bold',
+            fontSize: '14px',
+            margin: '0 0 5px 0',
+          },
+
+          '.highlight': {
+            display: 'flex',
+            alignItems: 'center',
+            margin: '5px 0',
+            fontSize: '12px',
+          },
+          '.highlight-blob': {
+            height: '12px',
+            width: '12px',
+            margin: '0 10px 0 0',
+            backgroundColor: '#ff5823',
+            borderRadius: '50%',
+          },
+          '.about-me-options .highlighted-btn': {
+            margin: '0 0 0 30px',
+          },
+
+          /*IPAD PRO RESPONSIVENESS */
+          '@media only screen and (max-width: 1110px)': {
+            '.about-me-parent': {
+              width: '88%',
+            }
+          },
+          '@media only screen and (max-width: 898px)': {
+            '.about-me-profile': {
+              display: 'none',
+            },
+            '.about-me-details': {
+              width: '100%',
+            },
+          },
+          '@media only screen and (max-width: 466px)': {
+            '.about-me-options': {
+              display: 'flex',
+              flexDirection: 'column',
+            },
+            '.about-me-options .highlighted-btn': {
+              margin: '24px 0 0 0 !important',
+            },
+            '.about-me-options button': {
+              width: '100%',
+            }
+          },
+
+        }
+
         addComponents(heading)
+        addComponents(headers)
+        addComponents(homes)
+        addComponents(profiles)
+        addComponents(aboutMe)
+        addComponents(buttons)
+        addComponents(footers)
       }
     ),
   ],

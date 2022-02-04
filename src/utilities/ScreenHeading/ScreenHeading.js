@@ -16,8 +16,10 @@ function ScreenHeading(props) {
                 }
 
                 <div className="heading-seperator">
-                    <div className="sperator-line">
-                        <div className="sperator-blob">
+                    <div className="seperator-line">
+                        <div className="seperator-blob">
+                            <div></div>
+                            <div></div>
                             <div></div>
                         </div>
                     </div>
