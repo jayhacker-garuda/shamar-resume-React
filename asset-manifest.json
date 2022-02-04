@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/shamar-resume-React/static/css/main.653b1b59.css",
-    "main.js": "/shamar-resume-React/static/js/main.df2ebc92.js",
+    "main.css": "/shamar-resume-React/static/css/main.ae4884c7.css",
+    "main.js": "/shamar-resume-React/static/js/main.74644d7e.js",
     "static/js/787.3c54bddd.chunk.js": "/shamar-resume-React/static/js/787.3c54bddd.chunk.js",
     "static/media/profilephoto.jpg": "/shamar-resume-React/static/media/profilephoto.0897be0fd3411d605ab4.jpg",
+    "static/media/me.jpg": "/shamar-resume-React/static/media/me.56574f26a2d14d30b4d8.jpg",
     "static/media/Poppins-Thin.ttf": "/shamar-resume-React/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
     "static/media/Poppins-Light.ttf": "/shamar-resume-React/static/media/Poppins-Light.f41b63c0bb0963ace821.ttf",
     "static/media/Poppins-Regular.ttf": "/shamar-resume-React/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
@@ -12,12 +13,17 @@
     "static/media/Poppins-Bold.ttf": "/shamar-resume-React/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
     "static/media/Poppins-ExtraBold.ttf": "/shamar-resume-React/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
     "index.html": "/shamar-resume-React/index.html",
-    "main.653b1b59.css.map": "/shamar-resume-React/static/css/main.653b1b59.css.map",
-    "main.df2ebc92.js.map": "/shamar-resume-React/static/js/main.df2ebc92.js.map",
+    "static/media/programming-skills.svg": "/shamar-resume-React/static/media/programming-skills.d19983a9bee884277ffa.svg",
+    "static/media/projects.svg": "/shamar-resume-React/static/media/projects.2b352a52b0588dab62f5.svg",
+    "static/media/interests.svg": "/shamar-resume-React/static/media/interests.809890a3e4fb0938f61b.svg",
+    "static/media/education.svg": "/shamar-resume-React/static/media/education.10cfa28a40119ebd70cf.svg",
+    "static/media/work-history.svg": "/shamar-resume-React/static/media/work-history.a566475dedb99dea4bb8.svg",
+    "main.ae4884c7.css.map": "/shamar-resume-React/static/css/main.ae4884c7.css.map",
+    "main.74644d7e.js.map": "/shamar-resume-React/static/js/main.74644d7e.js.map",
     "787.3c54bddd.chunk.js.map": "/shamar-resume-React/static/js/787.3c54bddd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.653b1b59.css",
-    "static/js/main.df2ebc92.js"
+    "static/css/main.ae4884c7.css",
+    "static/js/main.74644d7e.js"
   ]
 }
