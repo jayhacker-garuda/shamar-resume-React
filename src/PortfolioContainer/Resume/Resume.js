@@ -62,12 +62,14 @@ function Resume(props) {
 
     const projectDetails = [
         {
+
             title: "Resume - Website",
             duration: { fromDate: "2021", toDate: "2021" },
             description: "A website to display all the attributes learnt and also to showcase my resume",
             subHeading: "Technologies Used: HTML, PHP, MySQL",
         },
         {
+
             title: "Youtube Converter - Website",
             duration: { fromDate: "2021", toDate: "2021" },
             description: "You can grab your youtube link and paste it and BOOM! mp3 ready to download",
@@ -140,14 +142,14 @@ function Resume(props) {
             ))}
         </div>,
         <div className="resume-screen-container" key="projects">
-            {projectDetails.map((projectDetails, index) => (
+            {projectDetails.map((projectDetail, index) => (
                 <ResumeHeading
                     key={index}
-                    heading={projectDetails.title}
-                    subheading={projectDetails.subHeading}
-                    description={projectDetails.description}
-                    fromDate={projectDetails.duration.fromDate}
-                    toDate={projectDetails.duration.toDate}
+                    heading={projectDetail.title}
+                    subheading={projectDetail.subHeading}
+                    description={projectDetail.description}
+                    fromDate={projectDetail.duration.fromDate}
+                    toDate={projectDetail.duration.toDate}
                 />
             ))}
         </div>,
@@ -173,7 +175,7 @@ function Resume(props) {
     const handleCarousal = (index) => {
         let offsetHeight = 360;
         let newCarousalOffset = {
-            style: { trasform: "translateY(" + index * offsetHeight * -1 + "px)" }
+            style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" }
         };
         setCarousalOffSetStyle(newCarousalOffset);
         setSelectedBulletIndex(index);
@@ -181,14 +183,16 @@ function Resume(props) {
 
     const getBullets = () => {
         return resumeBullets.map((bullet, index) => (
-            <div className={index === selectedBulletIndex ? "bullet selected-bullet" : "bullet"}
+            <div
+                onClick={() => handleCarousal(index)}
+                className={index === selectedBulletIndex ? "bullet selected-bullet" : "bullet"}
                 key={index}
-                onCLick={() => handleCarousal(index)}
             >
                 <img className="bullet-logo" src={require('../../assets/Resume/' + bullet.logoSrc + '')} alt="no internet" />
+                <span className="bullet-label">{bullet.label}</span>
             </div>
-        ))
-    }
+        ));
+    };
 
     const getResumeScreen = () => {
         return (
@@ -196,6 +200,7 @@ function Resume(props) {
                 style={carousalOffSetStyle.style}
                 className="resume-details-carousal"
             >
+                {/* {console.log(carousalOffSetStyle.style)} */}
                 {resumeDetails.map((ResumeDetail) => ResumeDetail)}
             </div>
         )
@@ -212,7 +217,7 @@ function Resume(props) {
                             <div className="bullets">{getBullets()}</div>
                         </div>
                     </div>
-                    <div className="resume-bullets-details">{getResumeScreen()}</div>
+                    <div className="resume-bullet-details">{getResumeScreen()}</div>
                 </div>
             </div>
         </div>

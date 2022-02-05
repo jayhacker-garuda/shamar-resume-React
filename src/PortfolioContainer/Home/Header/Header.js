@@ -26,8 +26,6 @@ function Header() {
                 <div key={screen.screen_name} className={getHeaderOptionsClass(d)}
                     onClick={() => switchScreen(d, screen)}>
                     <span>{screen.screen_name}</span>
-                    {/* <span>{getHeaderOptionsClass(1)}</span> */}
-                    {/* {console.log(screen.screen_name, "index =", d)} */}
                 </div>
             ))
         );
@@ -42,7 +40,6 @@ function Header() {
         if (selectedScreen === index)
             classes += " selected-header-option";
 
-        // console.log("Applied Classes", classes, "to", index, "selected Screen =", selectedScreen)
         return classes;
     }
 
@@ -68,7 +65,6 @@ function Header() {
                 <div className='header-logo'>
                     <span>SHAMDON^</span>
                 </div>
-                {console.log(showHeaderOptions)}
                 <div className={(showHeaderOptions) ? "header-options show-hamburger-options" : "header-options"}>
                     {getHeaderOptions()}
                 </div>

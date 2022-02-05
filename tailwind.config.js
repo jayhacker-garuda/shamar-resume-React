@@ -470,10 +470,138 @@ module.exports = {
 
         }
 
+        const resume = {
+          '.resume-container': {
+            display: 'flex',
+            alignItems: 'center',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            minHeight: 'fit-content',
+            margin: '120px 0',
+          },
+          '.resume-card': {
+            display: 'flex',
+            height: '360px',
+            width: '1000px',
+          },
+          '.resume-bullets': {
+            height: '100%',
+            boxShadow: '15px 0 9px -15px #1f2235',
+            width: '320px',
+          },
+          '.resume-bullet-details': {
+            flexGrow: '1',
+            width: '600px',
+            overflow: 'hidden',
+            padding: '0 0 0 80px',
+          },
+          '.experience-description': {
+            margin: '10px 0 0 0',
+            textAlign: 'justify',
+            maxWidth: '100%',
+          },
+          '.resume-details-carousal': {
+            transition: 'transform 1s ease-out',
+          },
+          '.bullet-container': {
+            display: 'flex',
+            alignItems: 'center',
+            height: '100%',
+            width: '100%',
+            position: 'relative',
+          },
+          '.bullets': {
+            width: '80%',
+            position: 'relative',
+            zIndex: '2',
+          },
+          '.bullet': {
+            display: 'flex',
+            alignItems: 'center',
+            backgroundColor: '#1f2235',
+            height: '40px',
+            margin: '15px 0',
+            padding: '0 8px',
+            borderRadius: '20px',
+            width: '30px',
+            transition: 'width 0.6s ease',
+            cursor: 'pointer',
+          },
+          '.bullet-label': {
+            fontSize: '14px',
+            whiteSpace: 'nowrap',
+            fontFamily: 'Poppins SemiBold',
+          },
+          '.bullet-logo': {
+            height: '16px',
+            margin: '0 30px 0 0',
+          },
+          '.bullet-icons': {
+            width: '34px',
+            height: '100%',
+            zIndex: '1',
+            backgroundColor: '#1f2235',
+            position: 'absolute',
+          },
+          '.selected-bullet': {
+            color: 'white',
+            width: '100%'
+          },
+          '.resume-screen-container': {
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-evenly',
+            height: '360px',
+            width: '100%'
+          },
+          '.resume-heading': {
+            display: 'flex',
+            flexDirection: 'column',
+          },
+          '.resume-main-heading': {
+            position: 'relative',
+            display: 'flex',
+            justifyContent: 'space-between',
+          },
+          '.heading-bullet': {
+            position: 'absolute',
+            left: '-30px',
+            height: '15px',
+            width: '15px',
+            top: '5px',
+            backgroundColor: 'orange',
+            borderRadius: '50%',
+          },
+          '.resume-sub-heading': {
+            fontSize: '14px',
+            fontFamily: 'Poppin SemiBold',
+            color: '#111',
+            margin: '10px 0 0 0',
+          },
+          '.resume-heading-description': {
+            fontSize: '12px',
+            textAlign: 'justify',
+          },
+          '.heading-date': {
+            backgroundColor: 'orange',
+            padding: '4px 12px',
+            fontSize: '14px',
+            borderRadius: '14px',
+            color: 'white',
+          },
+          '.skill-parent': {
+            display: 'flex',
+            flexDirection: 'column',
+            position: 'relative',
+            width: '50%'
+          }
+        }
+
         addComponents(heading)
         addComponents(headers)
         addComponents(homes)
         addComponents(profiles)
+        addComponents(resume)
         addComponents(aboutMe)
         addComponents(buttons)
         addComponents(footers)
