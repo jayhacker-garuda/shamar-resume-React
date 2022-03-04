@@ -445,6 +445,12 @@ module.exports = {
           '@media only screen and (max-width: 1110px)': {
             '.about-me-parent': {
               width: '88%',
+            },
+            '.resume-card': {
+              width: '880px',
+            },
+            '.resume-bullet-details': {
+              padding: '0px 0px 0px 70px'
             }
           },
           '@media only screen and (max-width: 898px)': {
@@ -518,7 +524,7 @@ module.exports = {
           '.bullet': {
             display: 'flex',
             alignItems: 'center',
-            backgroundColor: '#1f2235',
+            backgroundColor: '#193379',
             height: '40px',
             margin: '15px 0',
             padding: '0 8px',
@@ -540,19 +546,19 @@ module.exports = {
             width: '34px',
             height: '100%',
             zIndex: '1',
-            backgroundColor: '#1f2235',
+            backgroundColor: '#193379',
             position: 'absolute',
           },
           '.selected-bullet': {
             color: 'white',
-            width: '100%'
+            width: '100%',
           },
           '.resume-screen-container': {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-evenly',
             height: '360px',
-            width: '100%'
+            width: '100%',
           },
           '.resume-heading': {
             display: 'flex',
@@ -569,7 +575,7 @@ module.exports = {
             height: '15px',
             width: '15px',
             top: '5px',
-            backgroundColor: 'orange',
+            backgroundColor: '#ff5823',
             borderRadius: '50%',
           },
           '.resume-sub-heading': {
@@ -583,7 +589,7 @@ module.exports = {
             textAlign: 'justify',
           },
           '.heading-date': {
-            backgroundColor: 'orange',
+            backgroundColor: '#ff5823',
             padding: '4px 12px',
             fontSize: '14px',
             borderRadius: '14px',
@@ -594,8 +600,39 @@ module.exports = {
             flexDirection: 'column',
             position: 'relative',
             width: '50%'
-          }
-        }
+          },
+          '.programming-skills-container': {
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+          },
+          '.skill-percentage': {
+            position: 'relative',
+            height: '15px',
+            width: '70%',
+            backgroundColor: '#ff5823',
+          },
+          '.skill-percentage .active-percentage-bar': {
+            height: '15px',
+            transition: '0.8s ease',
+            backgroundColor: '#193379',
+          },
+          '.skill-parent span': {
+            fontFamily: 'Poppins SemiBold',
+            fontSize: '16px',
+            color: '#ff5823',
+          },
+          '@media only screen and (max-width: 1023px)': {
+            '.resume-content': {
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+            },
+          } 
+
+        } 
 
         addComponents(heading)
         addComponents(headers)

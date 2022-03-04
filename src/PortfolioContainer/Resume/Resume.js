@@ -21,7 +21,7 @@ function Resume(props) {
         return (
             <div className="resume-heading">
                 <div className="resume-main-heading">
-                    <div className="heading-bullet">
+                    <div className="heading-bullet"></div>
                         <span>{props.heading ? props.heading : ''}</span>
                         {props.fromDate && props.toDate ? (
                             <div className="heading-date">
@@ -30,14 +30,13 @@ function Resume(props) {
                         ) : (
                             <div></div>
                         )}
-                    </div>
+                </div>
                     <div className="resume-sub-heading">
                         <span>{props.subHeading ? props.subHeading : ""}</span>
                     </div>
                     <div className="resume-heading-description">
                         <span>{props.description ? props.description : ""}</span>
                     </div>
-                </div>
             </div>
         )
     };
@@ -102,8 +101,8 @@ function Resume(props) {
             <ResumeHeading
                 heading={"Pending"}
                 subHeading={"Pending"}
-                fromDate={'...'}
-                toDate={'...'}
+                fromDate={'2000'}
+                toDate={'NOW'}
             />
             <div className="experience-description">
                 <span className="resume-description-text">
@@ -126,7 +125,7 @@ function Resume(props) {
 
             </div>
         </div>,
-        <div className="resume-screen-container" key="programming-skills">
+        <div className="resume-screen-container programming-skills-container" key="programming-skills">
             {programmingSkillDetails.map((skill, index) => (
                 <div className="skill-parent" key={index}>
                     <div className="heading-bullet"></div>
@@ -134,7 +133,7 @@ function Resume(props) {
                     <div className="skill-percentage">
                         <div style={{
                             width: skill.ratingPercentage + "%"
-                        }} className="active-percentage">
+                        }} className="active-percentage-bar">
 
                         </div>
                     </div>
@@ -166,7 +165,7 @@ function Resume(props) {
             <ResumeHeading
                 heading='Sports'
                 description='Football a game everyone love, "diff stilz" I enjoy playing Table Tennis.'
-                subHeading='NOTE...!!!"diff stilz" is not a typo'
+                // subHeading='NOTE...!!!"diff stilz" is not a typo'
             />
         </div>
 
